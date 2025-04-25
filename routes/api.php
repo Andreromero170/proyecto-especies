@@ -19,7 +19,9 @@ Route::get('/listado_especies_invitado', [EspecieApiController::class, 'listado_
 
 Route::middleware('auth:sanctum')->get('/especies', [EspecieApiController::class, 'index']);
 
-Route::post('/especies', [EspecieApiController::class, 'store']);
+Route::middleware('auth:sanctum')->post('/especies', [EspecieApiController::class, 'store']);
+
+
 // Route::get('/especies/filtros', [EspecieApiController::class, 'filtros']);
 // Route::get('/especies/{slug}', [EspecieApiController::class, 'show']);
 
