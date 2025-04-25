@@ -12,7 +12,7 @@ const useLogin = () => {
         setError(null);
 
         try {
-            const response = await axios.post('https://juditlg25.iesmontenaranco.com:8000/api/login', {
+            const response = await axios.post('http://127.0.0.1:8000/api/login', {
                 email,
                 password
             });

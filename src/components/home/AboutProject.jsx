@@ -8,7 +8,7 @@ const AboutProject = () => {
               <div className="about-grid">
                   <div className="about-image">
                       <img
-                          src="/images/estudiantes-campo.jpg"
+                          src="/img/estudiantes-campo.jpg"
                           alt="Estudiantes explorando la naturaleza"
                       />
                   </div>

@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
                     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
                     try {
-                        const response = await axios.get('https://juditlg25.iesmontenaranco.com:8000/api/user');
+                        const response = await axios.get('http://localhost:8000/api/user');
                         setUser(response.data);
                     } catch (error) {
                         console.error('Error al obtener datos del usuario:', error);
